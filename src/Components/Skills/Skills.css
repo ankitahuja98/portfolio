@@ -1,0 +1,103 @@
+:root {
+  --card_light: #191924;
+  --primary: #854ce6;
+  --text_primary: white;
+  --text_secondary: rgba(255, 255, 255, 0.637);
+}
+.skillcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.heading {
+  text-align: center;
+}
+
+.heading h1 {
+  color: var(--text_primary);
+}
+.heading p {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--text_secondary);
+}
+
+.skillCol {
+  width: 11% !important;
+}
+
+.skillicon {
+  width: 90%;
+}
+
+.skillrow1 {
+  width: 70%;
+  margin-top: 4rem !important;
+  justify-content: space-between;
+}
+
+.skillrow2 {
+  width: 70%;
+  margin-top: 3rem !important;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 1400px) {
+  .skillCol {
+    width: 13% !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skillCol {
+    width: 14% !important;
+  }
+
+  .skillrow1 {
+    width: 80%;
+    margin-top: 4rem !important;
+    justify-content: space-between;
+  }
+
+  .skillrow2 {
+    width: 80%;
+    margin-top: 3rem !important;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 992px) {
+  .skillCol {
+    width: 15% !important;
+  }
+
+  .skillrow1 {
+    width: 100%;
+    margin-top: 4rem !important;
+    justify-content: space-between;
+  }
+
+  .skillrow2 {
+    width: 100%;
+    margin-top: 3rem !important;
+    justify-content: space-evenly;
+  }
+}
+
+@media (max-width: 500px) {
+  .skillCol {
+    width: 20% !important;
+  }
+
+  .skillrow1 {
+    width: 100%;
+    margin-top: 2.5rem !important;
+  }
+
+  .skillrow2 {
+    width: 93%;
+    margin-top: 2rem !important;
+  }
+}

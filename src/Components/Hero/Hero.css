@@ -1,0 +1,182 @@
+:root {
+  --card_light: #191924;
+  --primary: #854ce6;
+  --text_primary: white;
+  --text_secondary: rgba(255, 255, 255, 0.637);
+}
+
+.HeroContainer {
+  background-color: var(--card_light);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
+  text-align: justify;
+}
+.HeroLeftContainer {
+  margin-bottom: 1rem;
+}
+
+.Title {
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--text_primary);
+  line-height: 68px;
+}
+.Textloop {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text_primary);
+  line-height: 68px;
+  gap: 12px;
+  display: flex;
+}
+
+.Textloop span {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.Subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--text_secondary);
+  line-height: 32px;
+  margin-bottom: 20px;
+}
+.HeroRight {
+  margin-top: 3rem !important;
+}
+.HeroLeft {
+  margin-top: 3rem !important;
+}
+.HeroRightContainer img {
+  width: 60%;
+  height: auto;
+}
+
+.ResumeButton {
+  background: hsla(271, 100%, 50%, 1);
+  background: linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    225deg,
+    hsla(271, 100%, 50%, 1) 0%,
+    hsla(294, 100%, 50%, 1) 100%
+  );
+  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  transition: all 0.2s ease-in-out !important;
+  padding: 11px 22px !important;
+  font-size: 1.1rem !important;
+  border-radius: 20px !important;
+  border: 2px solid rgba(255, 255, 255, 0.785) !important;
+  font-weight: 500;
+}
+
+.ResumeButton:hover {
+  text-decoration: none !important;
+  background-color: rgb(36, 21, 75) !important;
+  color: white !important;
+  font-weight: 600;
+  transform: scale(1.05);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 20px 20px 60px #1f2634;
+  filter: brightness(1);
+}
+.ResumeButton a {
+  text-decoration: none !important;
+}
+
+.ResumeButtondiv {
+  text-decoration: none !important;
+  color: white;
+}
+.ResumeButtondiv :hover {
+  text-decoration: none !important;
+  color: white !important;
+}
+/* .HeroRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+@media (max-width: 1200px) {
+  .HeroRightContainer {
+    height: 32rem;
+    width: 125%;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin-top: 0px;
+  }
+  .HeroRightContainer {
+    height: 30rem !important;
+    width: 210%;
+  }
+  .HeroLeftContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .HeroRightContainer {
+    height: 17rem !important ;
+  }
+}
+
+@media (max-width: 550px) {
+  .HeroRightContainer {
+    height: 15rem !important ;
+  }
+  .Title {
+    font-size: 35px;
+  }
+  .Textloop {
+    font-size: 24px;
+  }
+}
+@media (max-width: 470px) {
+  .HeroRightContainer {
+    height: 11rem !important ;
+  }
+}
+
+@media (max-width: 430px) {
+  .HeroRightContainer {
+    height: 9rem !important ;
+  }
+}
+
+@media (max-width: 380px) {
+  .HeroRightContainer {
+    height: 8rem !important ;
+  }
+  .Title {
+    font-size: 30px;
+  }
+  .Textloop {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 330px) {
+  .HeroRightContainer {
+    height: 5rem !important ;
+  }
+  .Title {
+    font-size: 25px;
+  }
+  .Textloop {
+    font-size: 17px;
+  }
+}
