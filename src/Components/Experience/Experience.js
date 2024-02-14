@@ -10,11 +10,22 @@ const Experience = () => {
 
     const [CompanyTitle_col, setCompanyTitle_col] = useState("col-10")
 
+    const [SkillsHead_col, setSkillsHead_col] = useState("col-1")
+
+    const [Skills_col, setSkills_col] = useState("col-11")
+
     useEffect(() => {
-        if (width < 768) {
+        if (width < 768 && width >= 500) {
             setCompanylogo_col("col-3");
             setCompanyTitle_col("col-8");
+            setSkillsHead_col("col-2")
+            setSkills_col("col-10")
         } else if (width > 768) {
+            setCompanylogo_col("col-2");
+            setCompanyTitle_col("col-10");
+            setSkillsHead_col("col-1")
+            setSkills_col("col-11")
+        }else if(width < 500){
             setCompanylogo_col("col-2");
             setCompanyTitle_col("col-10");
         }
@@ -25,7 +36,7 @@ const Experience = () => {
 
             <div className='ExpHeading'>
                 <h1>Experience</h1>
-                <p>My work experience as a Software Engineer and working on different companies and projects.</p>
+                <p className='ExpHeadingBody'>My work experience as a Software Engineer and working on different companies and projects.</p>
             </div>
 
             <div className='Exp_card'>
@@ -50,11 +61,11 @@ const Experience = () => {
                     <div className='col-12'>
                         <p className='jobDesp'>As an accomplished Frontend Developer with three years of hands-on experience, I excel in crafting immersive web experiences by leveraging a robust skill set. </p>
                         <div className='row'>
-                            <div className='col-1'>
-                                <p id='Skill'>Skills:</p>
+                            <div className={SkillsHead_col}>
+                                <p className='skillheading' id='Skill'>Skills:</p>
                             </div>
-                            <div className='col-11 skillTag'>
-                                <p>&#x2022;&nbsp;ReactJS &nbsp;&nbsp; &#x2022;&nbsp;NodeJS &nbsp;&nbsp; &#x2022;&nbsp;Javascript &nbsp;&nbsp; &#x2022;&nbsp;JQuery &nbsp;&nbsp; &#x2022;&nbsp;PostgreSQL &nbsp;&nbsp; &#x2022;&nbsp;GIT &nbsp;&nbsp; &#x2022;&nbsp;Bootstrap &nbsp;&nbsp; &#x2022;&nbsp;CSS &nbsp;&nbsp; &#x2022;&nbsp;HTML</p>
+                            <div className={Skills_col}>
+                                <p className="skillTag">&#x2022;&nbsp;ReactJS &nbsp;&nbsp; &#x2022;&nbsp;NodeJS &nbsp;&nbsp; &#x2022;&nbsp;Javascript &nbsp;&nbsp; &#x2022;&nbsp;JQuery &nbsp;&nbsp; &#x2022;&nbsp;PostgreSQL &nbsp;&nbsp; &#x2022;&nbsp;GIT &nbsp;&nbsp; &#x2022;&nbsp;Bootstrap &nbsp;&nbsp; &#x2022;&nbsp;CSS &nbsp;&nbsp; &#x2022;&nbsp;HTML</p>
                             </div>
                         </div>
 

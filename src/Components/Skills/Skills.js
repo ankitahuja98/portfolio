@@ -20,7 +20,7 @@ const Skills = () => {
   const [icon2, seticon2] = useState("none")
 
   useEffect(() => {
-    if (width < 500) {
+    if (width <= 500) {
       seticon("none")
       seticon2("flex")
     }
