@@ -1,0 +1,133 @@
+:root {
+  --card_light: #191924;
+  --primary: #854ce6;
+  --text_primary: white;
+  --text_secondary: rgba(255, 255, 255, 0.637);
+}
+.expContainer {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ExpHeading {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ExpHeading h1 {
+  color: var(--text_primary);
+}
+.ExpHeading p {
+  width: 85%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--text_secondary);
+}
+
+.Exp_card {
+  width: 80%;
+  padding: 1.5rem;
+  color: white;
+  border: 1px solid white;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 15px rgba(255, 255, 255, 0.589);
+  transition: 0.5s transform ease-in-out;
+}
+.Exp_card:hover {
+  border: 2px solid white;
+  box-shadow: 1.5px 1.5px 15px rgba(255, 255, 255, 0.705);
+  transform: scale(1.02);
+}
+.card_heading {
+  width: 95% !important;
+  margin-left: 1rem !important;
+}
+.CompanyLogo {
+  width: 80%;
+  height: 82%;
+  border-radius: 0.5rem;
+}
+.title h5,
+h6 {
+  color: var(--text_primary);
+}
+.title p {
+  color: var(--text_secondary);
+}
+.jobDesp {
+  text-align: justify;
+  color: #fdfdfdd1;
+  width: 96.5%;
+}
+.skillTag {
+  text-align: justify;
+}
+.card_body p {
+  margin-left: 1rem;
+}
+#Skill {
+  font-weight: 600;
+}
+.Clogo {
+  width: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media (max-width: 1200px) {
+  .CompanyLogo {
+    width: 92%;
+    height: 82%;
+    border-radius: 0.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .Exp_card {
+    width: 100%;
+  }
+  .Clogo {
+    width: 100%;
+  }
+  .CompanyLogo {
+    width: 110%;
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .Clogo {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+  }
+  .CompanyLogo {
+    width: 115%;
+    align-items: center;
+    display: flex;
+    height: auto;
+  }
+  .jobDesp {
+    width: 94%;
+  }
+  .skillTag p{
+    padding-left: 1rem;
+  }
+  .title{
+    padding-left:1rem;
+  }
+}
+
+@media (max-width: 500px) {
+
+
+}

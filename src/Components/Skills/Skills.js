@@ -29,12 +29,13 @@ const Skills = () => {
       seticon2("none")
     }
   },[width])
+
   return (
     <div className='container skillcontainer'>
 
       <div className='heading'>
         <h1>Skills</h1>
-        <p>Here are some of my skills on which i have been working on for the<br /> past 3 years</p>
+        <p>Here are some of my skills on which i have been working on for the past 3 years</p>
       </div>
 
       <div className='row skillrow1'>

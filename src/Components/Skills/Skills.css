@@ -13,12 +13,17 @@
 }
 .heading {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading h1 {
   color: var(--text_primary);
 }
 .heading p {
+  width: 85%;
   margin-top: 1rem;
   text-align: center;
   color: var(--text_secondary);
@@ -69,6 +74,9 @@
 }
 
 @media (max-width: 992px) {
+  .heading p {
+    width: 100%;
+  }
   .skillCol {
     width: 15% !important;
   }
