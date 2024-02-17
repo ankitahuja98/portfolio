@@ -1,5 +1,5 @@
-import Weather_App_pic from "../Images/Project Demo Pics/Weather2.png"
-import Notes_App_pic from "../Images/Project Demo Pics/Notes.png"
+// import Weather_App_pic from "../Images/Project Demo Pics/Weather2.png"
+// import Notes_App_pic from "../Images/Project Demo Pics/Notes.png"
 
 
 export const Bio = {
@@ -22,7 +22,7 @@ export const projects = [
         date: "",
         description:
             "Developed responsive Notes application using React.js and Bootstrap blending a user-friendly interface with real-time features such as Save, Edit, and Delete.",
-        image: {Weather_App_pic},
+        image: "https://i.imgur.com/mlA5t12.png",
         alt:"Notes_App_pic",
         tags: [
             "React Js",
@@ -40,7 +40,7 @@ export const projects = [
         date: "",
         description:
             "Created dynamic Weather application leverages the OpenWeatherMap API to provide real-time information includes city-specific weather, temperature, humidity, and wind speed.",
-        image: {Notes_App_pic},
+        image: "https://i.imgur.com/FfF7Y0l.png",
         alt:"Weather_App_pic",
         tags: [
             "React Js",

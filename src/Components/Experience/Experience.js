@@ -32,7 +32,7 @@ const Experience = () => {
     }, [width])
 
     return (
-        <div className='container expContainer'>
+        <div className='container expContainer' id='experience'>
 
             <div className='ExpHeading'>
                 <h1>Experience</h1>

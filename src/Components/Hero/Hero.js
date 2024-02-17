@@ -2,7 +2,7 @@ import React from 'react';
 import './Hero.css';
 import { Bio } from '../../data/constants';
 import Typewriter from "typewriter-effect";
-import MainPic from "../../Images/Main.png"
+import MainPic from "../../Images/Main.png";
 
 const Hero = () => {
   return (
@@ -37,6 +37,30 @@ const Hero = () => {
                 </div>
                 {/* Resume button Ended */}
 
+
+                <div className='row w-100 d-flex justify-content-center align-items-center mt-3'>
+                  {/* Github button started */}
+                  <div className='col-06 GitProfileBtn'>
+                    <div className='BtnContainer githubcontainer'>
+                      <a className='GithubBtnA' href={Bio.github} rel="noreferrer" target='_blank'>
+                        <p className='GithubButton'>Github Profile</p>
+                      </a>
+                    </div>
+                  </div>
+                  {/* Github button ended */}
+
+                  {/* Linkedin button started */}
+                  <div className='col-06 LinkProfileBtn'>
+                    <div className='BtnContainer Linkedincontainer'>
+                      <a className='LinkedinBtnA' href={Bio.linkedin} rel="noreferrer" target='_blank'>
+                        <p className='LinkedinButton'>Linkedin Profile</p>
+                      </a>
+                    </div>
+                  </div>
+                  {/*Linkedin button ended */}
+                </div>
+
+
               </div>
             </div>
             {/* Hero Section Left Ended */}
@@ -48,7 +72,6 @@ const Hero = () => {
               </div>
             </div>
             {/* Hero Section Right Ended */}
-
 
           </div>
         </div>

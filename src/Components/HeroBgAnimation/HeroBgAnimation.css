@@ -1,0 +1,6 @@
+.BgAnimation__svg {
+    width: 70%;
+    position: relative;
+    left: 15%;
+    z-index: -1;
+}

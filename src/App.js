@@ -5,11 +5,10 @@ import Navbar from './Components/Navbar/Navbar';
 import Hero from './Components/Hero/Hero';
 import Skills from './Components/Skills/Skills';
 import Experience from './Components/Experience/Experience';
-import Education from './Components/Education';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Projects from './Components/Projects/Projects';
-
+import Contact from './Components/Contact/Contact';
 
 
 
@@ -30,20 +29,56 @@ const Wrapper = styled.div`
 const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
-      <Router>
+      <BrowserRouter>
         <Navbar />
         <Body>
           <Hero />
+
           <Wrapper>
             <Skills />
             <Experience />
           </Wrapper>
+
           <Projects />
-          <Education />
+
+          <Wrapper>
+            <Contact />
+          </Wrapper>
+
         </Body>
-      </Router>
+
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
 
 export default App
+
+
+
+/* <ThemeProvider theme={darkTheme}>
+      <BrowserRouter>
+        <Navbar />
+
+        <Body>
+          <Routes>
+            <Route exact='true' path="*" element={<Hero />}></Route>
+          </Routes>
+          <Wrapper>
+            <Routes>
+              <Route exact='true' path="/skills" element={<Skills />}></Route>
+              <Route exact='true' path="/expreience" element={<Experience />}></Route>
+            </Routes>
+          </Wrapper>
+          <Routes>
+            <Route exact='true' path="/projects" element={<Projects />}></Route>
+          </Routes>
+          <Wrapper>
+            <Routes>
+              <Route exact='true' path="/contact" element={<Contact />}></Route>
+            </Routes>
+          </Wrapper>
+        </Body>
+
+      </BrowserRouter>
+    </ThemeProvider> */

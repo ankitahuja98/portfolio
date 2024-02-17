@@ -30,11 +30,19 @@
 }
 
 .skillCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 11% !important;
 }
 
 .skillicon {
   width: 90%;
+}
+.SkillTag {
+  margin-top: 0.5rem;
+  color: var(--text_primary);
 }
 
 .skillrow1 {
