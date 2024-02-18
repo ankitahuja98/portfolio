@@ -116,4 +116,12 @@
     width: 93%;
     margin-top: 2rem !important;
   }
+  .SkillTag{
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 400px) {
+  .SkillTag{
+    font-size: 0.6rem;
+  }
 }

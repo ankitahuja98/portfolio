@@ -18,6 +18,7 @@
 
 } */
 .ContactContainer {
+  z-index: 10505;
   padding-top: 2rem;
   margin-top: 3rem;
 }
@@ -94,6 +95,18 @@ input {
 }
 .InputDiv{
   padding-left: 1rem;
+}
+.formError{
+  padding-left: 1rem;
+}
+.modal-dialog-centered{
+  width: 400px;
+}
+.modal-content{
+  background-color: rgb(255, 255, 255);
+}
+.modal-body{
+  padding: 0px !important;
 }
 @media (max-width: 991px){
   .ContactImgDiv{

@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './Contact.css';
 import Contact_img from '../../Images/conversation.gif'
+import MsgSent from '../../Images/MsgSent.gif'
 import { useFormik } from 'formik';
 import { validation } from '../../Schemas/index'
-import emailjs from "emailjs-com"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-    const [BtnDisplay, setBtnDisplay] = useState(false);
+    const [BtnDisplay, setBtnDisplay] = useState(true);
 
     const initialValues = {
         name: "",
@@ -14,13 +15,31 @@ const Contact = () => {
         message: ""
     }
 
-    const { values, errors, touched, handleBlur, handleChange, handleSubmit } = useFormik({
+    const { values, errors, touched, handleBlur, handleChange } = useFormik({
         initialValues: initialValues,
         validationSchema: validation,
         onSubmit: (value, action) => {
             action.resetForm();
         }
     })
+
+
+    // const SentEmail = (e) => {
+    //     e.preventDefault();
+
+    //     emailjs.send("service_kz4remz", "template_ywzbmma", values, "2yCmlqpsB2GvaghIw")
+    //         .then(res => {
+    //             console.log("Email Sent Successfully", res)
+    //         }).catch(err => {
+    //             console.log("Error", err)
+    //         })
+    // }
+
+
+    // console.log(errors)
+    // console.log(errors.name)
+    // console.log(errors.email)
+    // console.log(errors.message)
 
     useEffect(() => {
         if ((errors.name) || (errors.email) || (errors.message)) {
@@ -29,18 +48,6 @@ const Contact = () => {
             setBtnDisplay(false)
         }
     }, [errors])
-
-    const SentEmail = (e) => {
-        console.log("aa rha hai")
-        e.preventDefault();
-
-        emailjs.sendForm("service_kz4remz", "service_kz4remz", e.target, "jJ-YlxEpPlw2kZjrA")
-            .then(res => {
-                console.log(res)
-            }).catch(err => {
-                console.log(err)
-            })
-    }
 
 
     return (
@@ -54,7 +61,7 @@ const Contact = () => {
                         <h1>Contact</h1>
                     </div>
 
-                    <form className='contact_form'  >
+                    <form className='contact_form'>
                         <div className='distanceDiv InputDiv'>
                             <label htmlFor='name'>Your Name</label>
                         </div>
@@ -102,12 +109,30 @@ const Contact = () => {
                         {errors.message && touched.message ? <p className='formError'>{errors.message}</p> : null}
 
                         <div className='mt-3 InputDiv'>
-                            <button disabled={BtnDisplay} className='sendbtn' type='submit' onClick={() => {handleSubmit();SentEmail();}} >Send</button>
+                            <button disabled={BtnDisplay} className='sendbtn' type='button' >Send</button>
+
+                            {/* data-bs-toggle="modal" data-bs-target="#myModal" */}
+                            {/* Modal Started */}
+                            {/* <div id="myModal" className="modal fade">
+                                <div className="modal-dialog modal-dialog-centered">
+                                    <div className="modal-content">
+                                        <div className="modal-body text-center p-5">
+                                            <img src={MsgSent} alt='MsgSent' trigger="loop" style={{ width: "120px", height: "120px" }}></img>
+                                            <div className="mt-4">
+                                                <h4 className="mb-3">Message Sent</h4>
+                                                <p className="text-muted mb-4"> I will contact you shortly.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> */}
+                            {/* Modal ended */}
+
                         </div>
                     </form>
                 </div>
                 {/* Contact detail section Ended */}
-
+                {/* onClick={SentEmail} */}
 
 
                 {/* Contact Image section started */}
@@ -116,6 +141,21 @@ const Contact = () => {
                 </div>
                 {/* Contact Image section Ended */}
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
     )
 }
