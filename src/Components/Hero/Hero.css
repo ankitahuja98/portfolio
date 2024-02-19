@@ -50,6 +50,7 @@
 .HeroRightContainer img {
   width: 60%;
   height: auto;
+  filter: brightness(95%);
 }
 
 .ResumeButton {

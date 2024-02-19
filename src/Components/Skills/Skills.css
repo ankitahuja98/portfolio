@@ -40,6 +40,9 @@
 .skillicon {
   width: 90%;
 }
+.skillicon:hover {
+  filter:drop-shadow(0px 0px 12px var(--primary));
+}
 .SkillTag {
   margin-top: 0.5rem;
   color: var(--text_primary);
