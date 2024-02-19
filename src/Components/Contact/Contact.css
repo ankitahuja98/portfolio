@@ -4,21 +4,10 @@
   --text_primary: white;
   --text_secondary: rgba(255, 255, 255, 0.637);
 }
-/* .ContactCol {
-  background: linear-gradient(
-      38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
-    ),
-    linear-gradient(
-      141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
-    );
 
-} */
 .ContactContainer {
   z-index: 10505;
+  height: 36rem;
   padding-top: 2rem;
   margin-top: 3rem;
 }

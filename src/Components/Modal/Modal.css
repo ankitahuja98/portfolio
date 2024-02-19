@@ -1,0 +1,44 @@
+.modalBackground {
+  width: 100vw;
+  height: 105vh;
+  background-color: rgba(200, 200, 200, 0.251) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 40rem;
+}
+.modalContainer {
+  width: 30%;
+}
+.modal-content {
+  border-radius: 1rem;
+  background-color: #ebe0cd;
+  box-shadow: 2px 2px 10px black;
+}
+.modal-body img{
+  filter: drop-shadow(13px 12px 6px rgba(0, 0, 0, 0.388));
+}
+
+@media (max-width: 1000px) {
+  .modalContainer {
+    width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modalContainer {
+    width: 50%;
+  }
+}
+
+@media (max-width: 550px) {
+  .modalContainer {
+    width: 60%;
+  }
+}
+@media (max-width: 450px) {
+  .modalContainer {
+    width: 70%;
+  }
+}
