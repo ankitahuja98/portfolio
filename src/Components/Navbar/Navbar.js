@@ -42,7 +42,7 @@ const Navbar = () => {
                     <Link className='NavLink' exact="true" activeclassname='active' aria-current="page" to='skill' spy={true} smooth={true} offset={-100} duration={200}>Skills</Link>
                     <Link className='NavLink' exact="true" activeclassname='active' aria-current="page" to='experience' spy={true} smooth={true} offset={-100} duration={200}>Experience</Link>
                     <Link className='NavLink' exact="true" activeclassname='active' aria-current="page" to='projects' spy={true} smooth={true} offset={-100} duration={200}>Projects</Link>
-                    <Link className='NavLink' exact="true" activeclassname='active' aria-current="page" to='contact' spy={true} smooth={true} offset={-50} duration={200}>Contact</Link>
+                    <Link className='NavLink' exact="true" activeclassname='active' aria-current="page" to='contact' spy={true} smooth={true} offset={-80} duration={200}>Contact</Link>
                 </div>
 
                 {/* Github button started */}

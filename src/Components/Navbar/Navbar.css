@@ -132,6 +132,7 @@ a.active {
     flex-direction: column;
     height: 4rem;
     margin-top: 20rem;
+    margin-left: 0px;
   }
   .NavLink {
     margin-bottom: 1rem;
