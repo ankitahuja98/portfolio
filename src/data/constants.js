@@ -1,7 +1,8 @@
 import Weather_App_pic from "../Images/Project Demo Pics/Weather2.png";
 import Blog_Management from "../Images/Project Demo Pics/BlogManagement.png";
 import SwiggyThumbnail from "../Images/Project Demo Pics/SwiggyThumbnail.png";
-import CompanyLogo from "../Images/DGDE-Logo2.png";
+import DgdeLogo from "../Images/DGDE-Logo2.png";
+import AppoloLogo from "../Images/costacloud_logo.jpeg";
 import html from "../../src/Images/SkillsIcons/html.png";
 import css from "../../src/Images/SkillsIcons/css.png";
 import javascript from "../../src/Images/SkillsIcons/javascript.png";
@@ -18,12 +19,12 @@ import NextJs from "../../src/Images/SkillsIcons/Nextjs.png";
 
 export const Bio = {
   name: "Ankit Ahuja",
-  roles: ["Frontend Developer", "Programmer"],
+  roles: ["Senior Software Engineer", "Frontend Developer"],
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "I am a driven and adaptable professional with over 4 years of experience in the Frontend domain, capable of delivering end-to-end projects with efficiency and precision. Passionate about continuous learning and growth, I bring a positive attitude and a strong commitment to producing high-quality outcomes.",
   github: "https://github.com/ankitahuja98/",
   resume:
-    "https://drive.google.com/file/d/1og8_TlUOZ-AIe8bK0Fq8XD_EpoF1ePxH/view?usp=drive_link",
+    "https://drive.google.com/file/d/1mxndcx6nI9IpOJ0pFAy6IWQTsSRf3QFe/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/ankitahuja98/",
 };
 
@@ -113,17 +114,35 @@ export const skillSet2 = [
 export const experiences = [
   {
     id: 0,
-    image: CompanyLogo,
+    image: AppoloLogo,
+    role: "Senior Software Engineer",
+    company: "Appolo Computers Pvt. Ltd.",
+    date: "March/2025 - Present",
+    desc: "Spearheaded the development of TeamSync, a file management system built with React, Material-UI, and Redux, enhancing team collaboration and eliminating manual paperwork. Integrated advanced document editing features using Syncfusion and Apryse. Upgraded legacy dependencies, enhancing performance by 25%. Managed a team of six developers, enforced code quality through reviews, and ensured timely delivery by resolving Jira-tracked issues and adapting to evolving requirements. ",
+    skills: [
+      "ReactJS",
+      "Redux",
+      "NextJS",
+      "Javascript",
+      "Webpack",
+      "NodeJS",
+      "MongoDB",
+      "Jest",
+      "Tailwind",
+      "API Integration",
+      "HTML",
+      "CSS",
+      "Project Ownership",
+      "Code Quality & Standards",
+    ],
+  },
+  {
+    id: 1,
+    image: DgdeLogo,
     role: "Frontend Developer",
     company: "Directorate General Defence Estates",
-    date: "March/2021 - Present",
-    desc: [
-      {
-        pt: 0,
-        heading: "3+ Years of Experience | Development & Optimization:",
-        body: "Led the design and development of a web-based RTRM (Real-Time Record Management) system for managing defense land records across India using ReactJS, Redux, SpringBoot, and more, supporting 100+ users. Optimized app performance through code-splitting, lazy loading, and debouncing techniques. Developed advanced modules like Encroachment Tracking and dynamic reporting features with Material UI, Tailwind CSS, and Redux Toolkit for smooth data input, management, and reporting.",
-      },
-    ],
+    date: "March/2021 - Feb/2025",
+    desc: "Led the design and development of a web-based RTRM (Real-Time Record Management) system for managing defense land records across India using ReactJS, Redux, SpringBoot, and more, supporting 100+ users. Optimized app performance through code-splitting, lazy loading, and debouncing techniques. Developed advanced modules like Encroachment Tracking and dynamic reporting features with Material UI, Tailwind CSS, and Redux Toolkit for smooth data input, management, and reporting.",
     skills: [
       "ReactJS",
       "Redux",

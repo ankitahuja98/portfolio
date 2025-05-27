@@ -90,7 +90,7 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="distanceDiv InputDiv">
-                  <label htmlFor="name">Your Name</label>
+                  <label htmlFor="name">Name</label>
                 </div>
                 <div className="InputDiv">
                   <input
@@ -101,7 +101,7 @@ const Contact = () => {
                     onBlur={handleBlur}
                     type="text"
                     autoComplete="off"
-                    placeholder="What's your good name"
+                    placeholder="Enter your full name"
                   ></input>
                 </div>
                 {errors.name && touched.name ? (
@@ -116,7 +116,7 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="distanceDiv InputDiv">
-                  <label htmlFor="email">Your Email</label>
+                  <label htmlFor="email">Email</label>
                 </div>
                 <div className="InputDiv">
                   <input
@@ -127,7 +127,7 @@ const Contact = () => {
                     onBlur={handleBlur}
                     type="email"
                     autoComplete="off"
-                    placeholder="What's your email"
+                    placeholder="Enter your email"
                   ></input>
                 </div>
                 {errors.email && touched.email ? (
@@ -142,7 +142,7 @@ const Contact = () => {
                 viewport={{ once: true }}
               >
                 <div className="distanceDiv InputDiv">
-                  <label htmlFor="message">Your Message</label>
+                  <label htmlFor="message">Message</label>
                 </div>
                 <div className="InputDiv">
                   <textarea
@@ -154,7 +154,7 @@ const Contact = () => {
                     type="text"
                     rows="8"
                     autoComplete="off"
-                    placeholder="What you want to say?"
+                    placeholder="How can I help you?"
                   ></textarea>
                 </div>
                 {errors.message && touched.message ? (

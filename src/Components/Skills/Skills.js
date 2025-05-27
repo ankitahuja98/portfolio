@@ -19,7 +19,7 @@ const Skills = () => {
           <h1>Skills</h1>
           <p>
             Here are some of my skills on which i have been working on for the
-            past 3 years
+            past 4.3 years
           </p>
         </motion.div>
 

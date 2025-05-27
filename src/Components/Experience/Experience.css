@@ -5,7 +5,7 @@
   --text_secondary: rgba(255, 255, 255, 0.637);
 }
 .expContainer {
-  margin-top: 8rem;
+  margin-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,7 +26,7 @@
 .ExpHeadingBody {
   width: 71%;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   color: var(--text_secondary);
 }
@@ -108,7 +108,7 @@ h6 {
 
 @media (max-width: 768px) {
   .expContainer {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .CompanyLogo {
     width: 7.7rem;
@@ -156,5 +156,14 @@ h6 {
   .skillTag {
     padding-left: 1rem !important;
     margin-left: 1.7rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .css-1ms7hib-MuiTimelineItem-root::before {
+    padding: 0px !important;
+  }
+  .timeline {
+    padding: 6px !important;
   }
 }
